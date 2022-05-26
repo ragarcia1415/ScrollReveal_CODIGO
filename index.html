@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ilustracion</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+	<body> 
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fix-top">
+		  <div class="container">
+		    <a class="navbar-brand" href="#">Bakery</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      <ul class="navbar-nav ml-auto">
+		        <li class="nav-item active">
+		          <a class="nav-link" href="#header">Inicio</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#info-uno">Tipos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#contact">Contacto</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+		<!----header ---->
+		<header id="header">
+			<div class="container mt-5">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="header-content-left">
+							<img src="img/cake_Uno.jpg" alt="Imagen1" style="width: 100%;">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="header-content-right">
+							<h1 class="display-4 text-center">Tipos de pasteles.</h1>
+							<p class="mt-5">Los pasteles son una de las preparaciones más importantes en la gastronomía, especialmente en la repostería, materia encargada de su realización. ¿Quién le puede decir que no a un pastel lleno de sabor y textura?</p>
+							<a href="#" class="btn btn-outline-secondary btn-lg mt-2 header-btn"> Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--Testimonio-->
+		<section id="testimonio">
+			<div class="container">
+				<p class="h2 mb-2">
+					Hay una gran variedad de pasteles y sabores en todo el mundo, ¡no podríamos terminar de contarlos! Sin embargo, hay 5 pasteles que son los favoritos y que seguramente ya has probado en una fiesta o visto en una pastelería. Nosotros te decimos cuáles son. .
+				</p>
+				<p class="h4">Ricky Garcia</p>
+				
+			</div>
+		</section>
+
+		<!--INFO UNO-->
+		<section id="info-uno">
+			<div class="container">
+				<div class="row mt-5">
+					<div class="col-md-6">
+						<div class="info-left">
+							<img src="img/cake_Dos.jpg" alt="Imagen2" style="width: 100%;">
+						</div>
+					</div>
+					<div class="col-md-6 my-auto">
+						<div class="info-right">
+							<h2>Tres leches.</h2>
+							<p>El más consumido en Latinoamérica. Su nombre se debe a que está bañado con leche evaporada, condensada y crema. Se acompaña con frutos rojos o tropicales.</p>
+							<a href="#" class="btn btn-outline-secondary btn-lg">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--INFO DOS-->
+		<section id="info-dos" style="background: #f1f1f1;">
+			<div class="container">
+				<div class="row my-5">
+					<div class="col-md-6">
+						<h2>Pan de elote.</h2>
+						<p>Por supuesto, no podía faltar un postre mexicano. Este tiene un origen mítico, pues según el Popol Vuh, del maíz también fueron hechos los hombres y las mujeres. A esta preparación se le agrega leche o crema dulce.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<h2>Imposible</h2>
+						<p>Su nombre se atribuye a la forma particular en que se hornea: primero se coloca la mezcla de pastel de chocolate y posteriormente la de flan. Lo increíble y lo que lo hace “imposible”, es que, cuando se hornea, se invierten los lugares y el flan queda en la parte superior del pastel. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<form class="card my-4">
+							<div class="card-body">
+								<div class="form-group my-2">
+									<input type="text" placeholder="Name" class="form-control">
+								</div>
+								<div class="form-group my-2"">
+									<input type="email" placeholder="Email" class="form-control">
+								</div>
+								<div class="form-group my-2"">
+									<textarea placeholder="Message" rows="10" cols="30" class="form-control"></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary  btn-outline-secondary btn-block" style=" color: #fff; width: 100%;">Send</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!--JS Bootstrap-->
+		<script type="text/javascript" src="js/bootstrap.dundle.js"></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script>
+			window.sr = ScrollReveal();
+			sr.reveal('.navbar', {
+				duration: 2000,
+				origin: 'bottom'
+			});
+			sr.reveal('.header-content-left', {
+				duration: 2000,
+				origin: 'top',
+				distance: '300px'
+			});
+			sr.reveal('.header-content-right', {
+				duration: 2000,
+				origin: 'right',
+				distance: '300px'
+			});
+			sr.reveal('.header-btn', {
+				duration: 2000,
+				origin: 'bottom',
+				delay: 1000
+			});
+
+			sr.reveal('#testimonio', {
+				duration: 2000,
+				origin: 'left',
+				distance: '300px',
+				viewfactor: 0.2
+			});
+
+			// smoth scrolling
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			    anchor.addEventListener('click', function (e) {
+			        e.preventDefault();
+
+			        document.querySelector(this.getAttribute('href')).scrollIntoView({
+			            behavior: 'smooth'
+			        });
+			    });
+			});
+		</script>
+	</body>
+</html>
